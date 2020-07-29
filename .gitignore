@@ -1,4 +1,4 @@
 node_modules/
-dist/.js
-dist/.jpeg
-dist/.jpg
+dist/*.js
+dist/*.jpeg
+dist/*.jpg
