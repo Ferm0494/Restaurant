@@ -24,7 +24,7 @@ export const menu = () => {
         img.src = mealsImages[i]
         let description = document.createElement("p")
         description.innerHTML = menuDescription[i]
-        img.classList.add("rounded-circle", "animate__animated", "animate__bounceInLeft")
+        img.classList.add("rounded-circle", "food")
         description.classList.add("lead", "text-white")
         subMenu.appendChild(img)
         subMenu.appendChild(description)

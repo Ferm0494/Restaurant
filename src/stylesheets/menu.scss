@@ -2,11 +2,21 @@
     padding: 1em;
     align-items: center;
     img {
-        width: 7em;
-        height: 6em;
+        width: 8em;
+        height: 8em;
+        transition: all .4s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(1.5)
+        }
     }
     p {
         margin-left: 2em;
+        font-size: 2em;
     }
 }
 
@@ -14,6 +24,6 @@ h2 {
     font-size: 5.5em !important;
     font-family: "Dancing Script", cursive;
     color: #ffff;
-    padding: 0.3em;
+    padding: 0.1em;
     text-align: center
 }

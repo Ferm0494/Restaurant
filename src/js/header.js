@@ -7,6 +7,7 @@ export const header = () => {
 
     for (let i = 0; i < options.length; i++) {
         let li = document.createElement('li')
+        li.id = options[i]
         li.innerHTML = options[i]
         ul.appendChild(li)
     }
