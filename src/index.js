@@ -1,6 +1,7 @@
 import ("./stylesheets/custom.scss");
 import ("./stylesheets/menu.scss")
 import ("./stylesheets/contact.scss")
+import ("./stylesheets/about.scss")
 import ("bootstrap");
 import ("animate.css");
 import {
@@ -23,6 +24,9 @@ import {
     contact
 } from './js/contact'
 
+import {
+    about
+} from './js/about'
 
 const container = jumbotron("Best Sushi on town!")
 mainContainer().appendChild(header())
@@ -39,7 +43,7 @@ document.getElementById("Home").addEventListener("click", (e) => {
         mainContainer().appendChild(menu())
     })
     if (mainContainer().children[2] === undefined) {
-        console.log("Attaching undefined!");
+
         mainContainer().appendChild(menu())
     }
 })
@@ -52,8 +56,14 @@ document.getElementById("Contact").addEventListener("click", (e) => {
         mainContainer().removeChild(menu)
         mainContainer().appendChild(contact())
     })
-    console.log(menu);
 
+})
 
-
+document.getElementById("About").addEventListener("click", (e) => {
+    let child = mainContainer().children[2]
+    child.classList.add("animate__animated", "animate__backOutRight")
+    child.addEventListener('animationend', () => {
+        mainContainer().removeChild(child)
+        mainContainer().appendChild(about())
+    })
 })
