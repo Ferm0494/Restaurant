@@ -4,6 +4,9 @@ A Restaurant template webpage
 
 This projects uses Vainilla Javascript with Webpack to build modular Javascript with ES6 and manage assets in a modular way, the HTML was created using only DOM.
 
+![screenshot](./src/img/Demo1.png)
+![screenshot](./src/img/demo2.png)
+
 ## Built with
 
 - Javascript/ES6
