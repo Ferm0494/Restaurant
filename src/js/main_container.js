@@ -1,3 +1,3 @@
-export const mainContainer = () => {
-    return document.getElementById('content')
-}
+const mainContainer = () => document.getElementById('content');
+
+export default mainContainer;
