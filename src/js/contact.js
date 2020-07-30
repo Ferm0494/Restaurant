@@ -1,6 +1,6 @@
 export const contact = () => {
     const contactContainer = document.createElement("div")
-    contactContainer.classList.add("container", "d-flex", "flex-column", "justify-content-center", "align-items-center", "col-12", "mt-3")
+    contactContainer.classList.add("container", "d-flex", "flex-column", "justify-content-center", "align-items-center", "col-12", "mt-3", "contact")
     const header = document.createElement("h3")
     header.innerHTML = "Have a reservation ? Call us! at 222-222 "
     const subHeader = document.createElement("h4")

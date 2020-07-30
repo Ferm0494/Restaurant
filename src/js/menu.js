@@ -5,7 +5,7 @@ import menu4 from "../img/menu4.jpeg"
 
 export const menu = () => {
     const menuContainer = document.createElement("div")
-    menuContainer.classList.add("d-flex", "flex-column")
+    menuContainer.classList.add("d-flex", "flex-column", "menu")
     let mealsImages = [menu1, menu2, menu3, menu4]
     let menuDescription = ["A sweet Roll based on creamed cheese and shrimps with hot sauce",
         "The typical California roll with krab and cheese with cucumber", "Poker roll with toasted carrot, krab meat , creamed cheese and avocado",

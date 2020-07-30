@@ -3,3 +3,15 @@ h4 {
     font-family: "Dancing Script", cursive;
     color: #ffff;
 }
+
+@media (max-width: 575.98px) {
+    .contact {
+        align-items: flex-start !important;
+        iframe {
+            max-width: 23em;
+            width: 18em;
+            height: 17em;
+            margin-bottom: 3em;
+        }
+    }
+}
