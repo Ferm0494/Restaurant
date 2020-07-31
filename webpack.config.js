@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
 
- 
+
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -23,13 +23,15 @@ module.exports = {
         // Loader for webpack to process CSS with PostCSS
         loader: 'postcss-loader',
         options: {
-          plugins: function () { // post css plugins, can be exported to postcss.config.js
+          plugins() { // post css plugins, can be exported to postcss.config.js
             return [
+              /* eslint-disable */
               require('precss'),
-              require('autoprefixer')
+              require('autoprefixer'),
+            /* eslint-enable */
             ];
-          }
-        }
+          },
+        },
 
       },
       {
