@@ -1,18 +1,9 @@
 const path = require('path');
-const {
-  CleanWebpackPlugin,
-} = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
 
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'Output Management',
-    }),
-  ],
+ 
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -31,6 +22,14 @@ module.exports = {
       {
         // Loader for webpack to process CSS with PostCSS
         loader: 'postcss-loader',
+        options: {
+          plugins: function () { // post css plugins, can be exported to postcss.config.js
+            return [
+              require('precss'),
+              require('autoprefixer')
+            ];
+          }
+        }
 
       },
       {
