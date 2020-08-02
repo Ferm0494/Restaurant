@@ -1,0 +1,50 @@
+.subMenu {
+  padding: 1em;
+  align-items: center;
+
+  img {
+    width: 8em;
+    height: 8em;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      -ms-transform: scale(1.5);
+
+      /* IE 9 */
+      -webkit-transform: scale(1.5);
+
+      /* Safari 3-8 */
+      transform: scale(1.5);
+    }
+  }
+
+  p {
+    margin-left: 2em;
+    font-size: 2em;
+  }
+}
+
+.menu {
+  h2 {
+    font-size: 5.5em;
+    font-family: "Dancing Script", cursive;
+    color: #ffff;
+    padding: 0.1em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .menu {
+    h2 {
+      font-size: 3em;
+    }
+  }
+
+  .subMenu {
+    p {
+      font-size: 1em;
+    }
+  }
+}

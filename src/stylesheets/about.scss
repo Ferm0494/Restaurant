@@ -1,0 +1,44 @@
+.profile-img {
+  img {
+    min-width: 10em;
+    min-height: 7.5em;
+    width: 10em;
+    height: 10em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-family: "Dancing Script", cursive;
+    color: #fff;
+    font-size: 5.5em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile-img {
+    .profile-img-sub-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    img {
+      min-width: 7em;
+      min-height: 4.5em;
+      width: 7em;
+      height: 7em;
+    }
+  }
+}
